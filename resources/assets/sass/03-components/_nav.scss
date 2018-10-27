@@ -1,0 +1,53 @@
+.nav{
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 2;
+}
+
+.site-logo, .site-name, .site-details{
+  text-align: center;
+}
+
+.site-name{
+  margin-top: 15px;
+}
+
+.site-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-top: 15px;
+
+  img, p{
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  p{
+    font-family: $font-secondary;
+    font-size: 12px;
+    font-weight: bold;
+    color: $black;
+  }
+}
+
+.menu{
+  grid-column-gap: 0;
+  margin-top: 15px;
+}
+
+.menu-item{
+  grid-column: span 4;
+  font-family: $font-secondary;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  p{
+    color: $white;
+    letter-spacing: 0.75px;
+  }
+}
+
+

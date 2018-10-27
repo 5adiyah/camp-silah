@@ -1,15 +1,20 @@
 .grid, .background-grid{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 20px;
+  grid-column-gap: 5px;
 }
 
-.background-grid{
+.background-grid{ //remove in production
   grid-template-rows: 100vh;
+  width: 95%;
+  margin: 0 auto;
+  position: absolute;
+  left: 2.5%;
+  z-index: 1;
 }
 
 .grid-item{
-  background-color: #dae1e7;
+  background-color: #eee;
   opacity: 0.2;
 }
 

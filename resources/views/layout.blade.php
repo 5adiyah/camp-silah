@@ -8,7 +8,7 @@
 
 </head>
 <body>
-    <div class="container grid background-grid">
+    <div class="background-grid">
         <div class="grid-item col1"><p>1</p></div>
         <div class="grid-item col1"><p>2</p></div>
         <div class="grid-item col1"><p>3</p></div>
@@ -23,6 +23,29 @@
         <div class="grid-item col1"><p>12</p></div>
     </div>
 
-    @yield('content')
+    <div class="nav">
+        <div class="site-logo"><img src="{{ asset('images/mobile-logo.png') }}" alt="Camp Silah Logo"></div>
+        <div class="site-name"><img src="{{ asset('images/mobile-site-name.png') }}" alt="Camp Silah"></div>
+        <div class="site-details">
+            <p>CAMP MAGRUDER</p>
+            <img src="{{ asset('images/nav-divider.png') }}" alt="Nav Divider">
+            <p>JUNE 28 - JULY 1</p>
+            <img src="{{ asset('images/nav-divider.png') }}" alt="Nav Divider">
+            <p>$150/CHILD</p>
+        </div>
+        <div class="menu grid">
+            <div class="menu-item bg-red"><p>CAMP</p></div>
+            <div class="menu-item bg-green"><p>GUEST SPEAKER</p></div>
+            <div class="menu-item bg-yellow"><p>COUNSELORS</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container grid ">
+        @yield('content')
+    </div>
+
+
+
 </body>
 </html>

@@ -1,16 +1,41 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);@import url(https://fonts.googleapis.com/css?family=Cabin);.grid,
+@import url(https://fonts.googleapis.com/css?family=Montserrat);@import url(https://fonts.googleapis.com/css?family=Cabin);body {
+  position: relative;
+}
+
+.bg-red {
+  background-color: #F6856F;
+}
+
+.bg-green {
+  background-color: #28B39E;
+}
+
+.bg-yellow {
+  background-color: #FED766;
+}
+
+.bg-blue {
+  background-color: #004E64;
+}
+
+.grid,
 .background-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 20px;
+  grid-column-gap: 5px;
 }
 
 .background-grid {
   grid-template-rows: 100vh;
+  width: 95%;
+  margin: 0 auto;
+  position: absolute;
+  left: 2.5%;
+  z-index: 1;
 }
 
 .grid-item {
-  background-color: #dae1e7;
+  background-color: #eee;
   opacity: 0.2;
 }
 
@@ -65,5 +90,70 @@
 .container {
   width: 95%;
   margin: 0 auto;
+  z-index: 2;
+}
+
+.nav {
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 2;
+}
+
+.site-logo,
+.site-name,
+.site-details {
+  text-align: center;
+}
+
+.site-name {
+  margin-top: 15px;
+}
+
+.site-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 15px;
+}
+
+.site-details img,
+.site-details p {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.site-details p {
+  font-family: "Cabin", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #393E41;
+}
+
+.menu {
+  grid-column-gap: 0;
+  margin-top: 15px;
+}
+
+.menu-item {
+  grid-column: span 4;
+  font-family: "Cabin", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menu-item p {
+  color: #ffffff;
+  letter-spacing: 0.75px;
 }
 
