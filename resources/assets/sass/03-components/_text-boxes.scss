@@ -1,0 +1,55 @@
+.text-box-container{
+  padding: 15px 0;
+
+  .title-box, .text-box, .text-box-cta{
+    margin: 15px 0;
+  }
+}
+
+.text-box-container .title-box{
+  background-color: $green;
+  padding: 1em;
+  text-align: center;
+}
+
+.title-box h2{
+  color: $white;
+  font-family: $font-secondary;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+}
+
+.text-box-container .text-box{
+  padding: 15px;
+}
+
+.text-box p{
+  font-family: $font-primary;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  line-height: 25px;
+}
+
+.text-box-container .text-box-cta{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.text-box-cta button{
+  padding: 1em;
+  background-color: $yellow;
+  border: none;
+  color: $white;
+  font-family: $font-secondary;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  font-size: 12px;
+  width: 150px;
+}
+
+
+.text-box-cta button:hover{
+  background-color: $blue;
+  border-color: $blue;
+}
