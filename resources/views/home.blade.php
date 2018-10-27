@@ -7,6 +7,11 @@
         <div class="quote-mark-r"><img src="{{ asset('images/quote-right.png') }}" ></div>
     </div>
 
+    <div class="video-container col12">
+        <video src="https://player.vimeo.com/video/295256019" poster="{{ asset('images/video-bckgrnd.png') }}"></video>
+        <button class='button-play'></button>
+    </div>
+
     <div class="text-box-container col12">
         <div class="title-box">
             <h2>WHAT IS CAMP SILAH?</h2>

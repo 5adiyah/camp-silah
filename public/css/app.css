@@ -403,11 +403,11 @@ a {
 .text-box-container .title-box,
 .text-box-container .text-box,
 .text-box-container .text-box-cta {
-  margin: 15px 0;
+  margin-bottom: 15px;
 }
 
 .text-box-container .title-box {
-  background-color: #28B39E;
+  background-color: #F6856F;
   padding: 1em;
   text-align: center;
 }
@@ -458,5 +458,47 @@ a {
 .text-box-cta button:hover {
   background-color: #004E64;
   border-color: #004E64;
+}
+
+.video-container {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.video-container > video {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.button-play {
+  width: 74px;
+  height: 52px;
+  border-style: solid;
+  border-width: 37px 0 37px 52px;
+  border-color: transparent transparent transparent #28B39E;
+  background-color: transparent;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+}
+
+.button-pause {
+  width: 74px;
+  height: 60px;
+  border-color: #28B39E;
+  border-style: double;
+  border-width: 0 0 0 52px;
+}
+
+.button-play:hover,
+.button-pause:hover {
+  border-color: transparent transparent transparent #004E64;
+  -webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+  will-change: border-width;
+  cursor: pointer;
 }
 
