@@ -1,4 +1,5 @@
 // Imported Files
+@import '/01-config/reset';
 @import '/01-config/variables';
 @import '/01-config/base';
 @import '/01-config/extends';
@@ -8,6 +9,7 @@
 @import '/02-layout/container';
 
 @import '/03-components/nav';
+@import '/03-components/footer';
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Cabin');

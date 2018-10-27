@@ -45,6 +45,29 @@
         @yield('content')
     </div>
 
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="{{ asset('images/mobile-logo.png') }}" >
+        </div>
+
+        <div class="footer-site-name">
+            <img src="{{ asset('images/mobile-site-name.png') }}" >
+        </div>
+
+        <div class="footer-menu">
+            <ul>
+                <li><a href="#">SCHEDULE</a></li>
+                <li><a href="#">COUNSELORS</a></li>
+                <li><a href="#">PACKING LIST</a></li>
+                <li><a href="#">REGISTRATION</a></li>
+            </ul>
+        </div>
+
+        <div class="sign-up">
+            <input type="text" placeholder="Sign up for more info">
+            <button>SIGN UP</button>
+        </div>
+    </div>
 
 
 </body>
