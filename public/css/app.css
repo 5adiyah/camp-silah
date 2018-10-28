@@ -132,6 +132,7 @@ table {
 
 body {
   position: relative;
+  color: #393E41;
 }
 
 .bg-red {
@@ -274,6 +275,7 @@ a {
   font-size: 12px;
   font-weight: bold;
   color: #393E41;
+  letter-spacing: 1.5px;
 }
 
 .menu {
@@ -500,5 +502,51 @@ a {
   transition: 500ms all ease;
   will-change: border-width;
   cursor: pointer;
+}
+
+.info-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.info-title {
+  background-color: #28B39E;
+  padding: 1em;
+  text-align: center;
+}
+
+.info-title h2 {
+  color: #ffffff;
+  font-family: "Cabin", sans-serif;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+}
+
+.info-text {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info-text .link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  line-height: 25px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0;
 }
 

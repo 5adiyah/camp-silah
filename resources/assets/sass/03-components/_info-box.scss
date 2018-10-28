@@ -1,0 +1,36 @@
+.info-pic img{
+  width: 100%;
+  height: auto;
+}
+
+.info-title{
+  background-color: $green;
+  padding: 1em;
+  text-align: center;
+}
+
+.info-title h2{
+  color: $white;
+  font-family: $font-secondary;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+}
+
+.info-text {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.info-text .link{
+  font-family: $font-primary;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  line-height: 25px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  padding: 15px 0;
+}

@@ -25,4 +25,45 @@
             <button>Learn More</button>
         </div>
     </div>
+
+    <div class="info-box col12">
+        <div class="info-pic">
+            <img src="{{ asset('images/promo-pic1.png') }}" alt="">
+        </div>
+        <div class="info-title">
+            <h2>WHAT’S IT LIKE AT CAMP SILAH?</h2>
+        </div>
+        <div class="info-text">
+            <div class="info-links">
+                <div class="link">
+                    <span>About Camp Magruder</span>
+                    <img src="{{ asset('images/arrow-yellow.png') }}">
+                </div>
+                <div class="link">
+                    <span>Sleeping Arrangements</span>
+                    <img src="{{ asset('images/arrow-yellow.png') }}">
+                </div>
+                <div class="link">
+                    <span>Camper Ages & Groups</span>
+                    <img src="{{ asset('images/arrow-yellow.png') }}">
+                </div>
+                <div class="link">
+                    <span>Activities & Schedules</span>
+                    <img src="{{ asset('images/arrow-yellow.png') }}">
+                </div>
+                <div class="link">
+                    <span>Packing List & Supplies</span>
+                    <img src="{{ asset('images/arrow-yellow.png') }}">
+                </div>
+            </div>
+            {{--<ul class="info-arrows">--}}
+                {{--<img src="{{ asset('images/arrow-yellow.png') }}" alt="">--}}
+                {{--<img src="{{ asset('images/arrow-yellow.png') }}" alt="">--}}
+                {{--<img src="{{ asset('images/arrow-yellow.png') }}" alt="">--}}
+                {{--<img src="{{ asset('images/arrow-yellow.png') }}" alt="">--}}
+                {{--<img src="{{ asset('images/arrow-yellow.png') }}" alt="">--}}
+            {{--</ul>--}}
+        </div>
+    </div>
+
 @endsection
