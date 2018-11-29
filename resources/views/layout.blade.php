@@ -45,6 +45,13 @@
         @yield('content')
     </div>
 
+    <div class="email-list"  style="background-image:url('{{ asset('images/email-pttrn.png') }}')">
+        <h2>Sign up to be the first to know about Camp Silah 2019</h2>
+        <div class="email-cta">
+            <button>Sign Up</button>
+        </div>
+    </div>
+
     <div class="footer">
         <div class="footer-logo">
             <img src="{{ asset('images/mobile-logo.png') }}" >

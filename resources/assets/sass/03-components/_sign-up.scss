@@ -1,0 +1,30 @@
+.email-list{
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.email-list h2{
+  color: $white;
+  font-family: $font-secondary;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.email-cta{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.email-cta button{
+  background-color: $yellow;
+  border-color: $yellow;
+  border-style: none;
+  color: $white;
+  font-family: $font-secondary;
+  letter-spacing: 2px;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+}
