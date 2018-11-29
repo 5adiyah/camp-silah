@@ -551,3 +551,44 @@ a {
   padding: 15px 0;
 }
 
+.testimonial-title {
+  padding: 1em;
+  padding-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimonial-title h2 {
+  color: #ffffff;
+  font-family: "Cabin", sans-serif;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+}
+
+.testimonial-pic img {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+
+.testimonial-quote {
+  border: 3px solid #FED766;
+  border-top: none;
+  margin-top: -5px;
+  margin-bottom: 30px;
+}
+
+.camperQuote {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  color: #004E64;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.camperName {
+  color: #F6856F;
+}
+

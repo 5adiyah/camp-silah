@@ -87,8 +87,44 @@
                 <div class="link">
                     <span>Email The Camp Nurse</span>
                     <img src="{{ asset('images/arrow-yellow.png') }}">
-                </div>ig
+                </div>
             </div>
+        </div>
+    </div>
+
+    <div class="testimonial-box col12">
+        <div class="testimonial-title bg-green">
+            <h2>CAMP TESTIMONIALS</h2>
+        </div>
+
+        <div class="testimonial-pic">
+            <img src="{{ asset('images/promo-pic3.png') }}" alt="">
+        </div>
+        <div class="testimonial-quote">
+            <p class="camperQuote">“Camp Silah is the friendliest camp ever!"
+            <span class="camperName">Fikri Ridha</span></p>
+        </div>
+
+        <div class="testimonial-pic">
+            <img src="{{ asset('images/promo-pic4.png') }}" alt="">
+        </div>
+        <div class="testimonial-quote">
+            <p class="camperQuote">"First time going to a sleep away camp and I dont want to leave!" <span class="camperName">Sarah Masalmeh</span></p>
+        </div>
+
+        <div class="testimonial-pic">
+            <img src="{{ asset('images/promo-pic5.png') }}" alt="">
+        </div>
+        <div class="testimonial-quote">
+            <p class="camperQuote">"Camp silah gave me the oppurtunity to meet and connect with people of all ages."  <span class="camperName">Yusef Shareef</span></p>
+        </div>
+
+        <div class="testimonial-pic">
+            <img src="{{ asset('images/promo-pic6.png') }}" alt="">
+        </div>
+        <div class="testimonial-quote">
+            <p class="camperQuote">"I had the best time of my life, it was an experience I will never forget."
+                <span class="camperName">Ayah Hassouneh</span></p>
         </div>
     </div>
 
