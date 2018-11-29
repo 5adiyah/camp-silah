@@ -87,7 +87,7 @@
                 <div class="link">
                     <span>Email The Camp Nurse</span>
                     <img src="{{ asset('images/arrow-yellow.png') }}">
-                </div>
+                </div>ig
             </div>
         </div>
     </div>
