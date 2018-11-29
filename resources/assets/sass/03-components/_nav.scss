@@ -10,7 +10,7 @@
 }
 
 .site-name{
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .site-details{
@@ -18,7 +18,7 @@
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  margin-top: 15px;
+  margin-top: 20px;
 
   img, p{
     display: inline-block;
@@ -27,7 +27,7 @@
 
   p{
     font-family: $font-secondary;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
     color: $black;
     letter-spacing: 1.5px;
@@ -36,7 +36,7 @@
 
 .menu{
   grid-column-gap: 0;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .menu-item{
@@ -45,7 +45,7 @@
   font-size: 12px;
   font-weight: bold;
   text-align: center;
-  padding: 15px 0;
+  padding: 20px 0;
   p{
     color: $white;
     letter-spacing: 0.75px;
