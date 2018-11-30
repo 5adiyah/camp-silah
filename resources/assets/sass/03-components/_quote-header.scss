@@ -13,10 +13,18 @@
 }
 
 .quote-header .quote{
-  padding: 15px;
+  padding: 15px 50px;
   font-family: $font-primary;
   letter-spacing: 1.5px;
   line-height: 25px;
   text-align: center;
+  @include mq(tablet){
+    font-size: 18px;
+    line-height: 35px;
+  }
+  @include mq(desktop){
+    font-size: 21px;
+    line-height: 45px;
+  }
 }
 

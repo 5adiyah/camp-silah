@@ -31,6 +31,14 @@
     font-weight: bold;
     color: $black;
     letter-spacing: 1.5px;
+    @include mq(tablet){
+      font-size: 12px;
+      font-weight: normal;
+    }
+    @include mq(desktop){
+      font-size: 14px;
+      font-weight: normal;
+    }
   }
 }
 
@@ -50,6 +58,17 @@
     color: $white;
     letter-spacing: 0.75px;
   }
+
+  @include mq(tablet){
+    font-size: 14px;
+  }
+  @include mq(desktop){
+    font-size: 16px;
+  }
+}
+
+.menu-item:hover{
+  background-color: $blue;
 }
 
 

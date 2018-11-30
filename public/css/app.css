@@ -280,6 +280,20 @@ a {
   letter-spacing: 1.5px;
 }
 
+@media (min-width: 651px) and (max-width: 1239px) {
+  .site-details p {
+    font-size: 12px;
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 769px) {
+  .site-details p {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+
 .menu {
   grid-column-gap: 0;
   margin-top: 20px;
@@ -297,6 +311,22 @@ a {
 .menu-item p {
   color: #ffffff;
   letter-spacing: 0.75px;
+}
+
+@media (min-width: 651px) and (max-width: 1239px) {
+  .menu-item {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-item {
+    font-size: 16px;
+  }
+}
+
+.menu-item:hover {
+  background-color: #004E64;
 }
 
 .footer {
@@ -395,11 +425,25 @@ a {
 }
 
 .quote-header .quote {
-  padding: 15px;
+  padding: 15px 50px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1.5px;
   line-height: 25px;
   text-align: center;
+}
+
+@media (min-width: 651px) and (max-width: 1239px) {
+  .quote-header .quote {
+    font-size: 18px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 769px) {
+  .quote-header .quote {
+    font-size: 21px;
+    line-height: 45px;
+  }
 }
 
 .text-box-container {
@@ -436,6 +480,20 @@ a {
   line-height: 25px;
 }
 
+@media (min-width: 651px) and (max-width: 1239px) {
+  .text-box p {
+    font-size: 16px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 769px) {
+  .text-box p {
+    font-size: 18px;
+    line-height: 45px;
+  }
+}
+
 .text-box-container .text-box-cta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,6 +517,20 @@ a {
   font-weight: bold;
   font-size: 12px;
   width: 150px;
+}
+
+@media (min-width: 651px) and (max-width: 1239px) {
+  .text-box-cta button {
+    font-size: 16px;
+    width: 200px;
+  }
+}
+
+@media (min-width: 769px) {
+  .text-box-cta button {
+    font-size: 16px;
+    width: 200px;
+  }
 }
 
 .text-box-cta button:hover {
@@ -627,6 +699,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px 0;
+}
+
+.link span:hover {
+  color: #28B39E;
 }
 
 .testimonial-title {
