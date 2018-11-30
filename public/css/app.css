@@ -643,6 +643,46 @@ a {
   letter-spacing: 1.5px;
 }
 
+.testimonial-container {
+  display: grid;
+  max-width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+}
+
+@media (min-width: 651px) and (max-width: 1239px) {
+  .testimonial-container {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 769px) {
+  .testimonial-container {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1239px) {
+  .testimonial-box {
+    display: grid;
+    grid-template-rows: auto 200px;
+  }
+}
+
+@media (min-width: 769px) {
+  .testimonial-box {
+    display: grid;
+    grid-template-rows: auto 200px;
+  }
+}
+
+.testimonial-pic {
+  z-index: 2;
+}
+
 .testimonial-pic img {
   width: 100%;
   height: auto;
@@ -652,8 +692,9 @@ a {
 .testimonial-quote {
   border: 3px solid #FED766;
   border-top: none;
-  margin-top: -5px;
+  margin-top: -4px;
   margin-bottom: 30px;
+  z-index: 1;
 }
 
 .camperQuote {
@@ -673,6 +714,10 @@ a {
 .email-list {
   padding: 10px 0;
   margin-bottom: 30px;
+  width: 95%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .email-list h2 {
