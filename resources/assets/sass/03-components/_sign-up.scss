@@ -28,3 +28,8 @@
   text-transform: uppercase;
   padding: 0.5rem 1.5rem;
 }
+
+.email-cta button:hover{
+  background-color: $blue;
+  border-color: $blue;
+}
