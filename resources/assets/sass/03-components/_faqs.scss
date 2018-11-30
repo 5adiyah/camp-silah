@@ -1,0 +1,55 @@
+.faq-box{
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  grid-template-rows: 2em 1fr;
+  grid-gap: 20px;
+  margin-bottom: 30px;
+}
+
+.faq-title{
+  grid-column: 1 / 2;
+  display: grid;
+  align-items: center;
+}
+
+.faq-title h3{
+  font-family: $font-secondary;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+
+  @include mq(tablet){
+    font-size: 16px;
+    line-height: 35px;
+  }
+  @include mq(desktop){
+    font-size: 18px;
+    line-height: 45px;
+  }
+}
+
+.faq-pic{
+  grid-column: 2 / 3;
+}
+
+.faq-pic img{
+  height: 100%;
+}
+
+.faq-text{
+  grid-column: 1 / 3;
+}
+
+.faq-text p{
+  font-size: 12px;
+  text-align: justify;
+
+  @include mq(tablet){
+    font-size: 14px;
+    line-height: 35px;
+  }
+  @include mq(desktop){
+    font-size: 16px;
+    line-height: 45px;
+  }
+}

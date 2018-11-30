@@ -457,7 +457,6 @@ a {
 }
 
 .text-box-container .title-box {
-  background-color: #F6856F;
   padding: 1em;
   text-align: center;
 }
@@ -825,5 +824,73 @@ a {
 .email-cta button:hover {
   background-color: #004E64;
   border-color: #004E64;
+}
+
+.faq-box {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  grid-template-rows: 2em 1fr;
+  grid-gap: 20px;
+  margin-bottom: 30px;
+}
+
+.faq-title {
+  grid-column: 1 / 2;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq-title h3 {
+  font-family: "Cabin", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+@media (min-width: 651px) and (max-width: 1239px) {
+  .faq-title h3 {
+    font-size: 16px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 769px) {
+  .faq-title h3 {
+    font-size: 18px;
+    line-height: 45px;
+  }
+}
+
+.faq-pic {
+  grid-column: 2 / 3;
+}
+
+.faq-pic img {
+  height: 100%;
+}
+
+.faq-text {
+  grid-column: 1 / 3;
+}
+
+.faq-text p {
+  font-size: 12px;
+  text-align: justify;
+}
+
+@media (min-width: 651px) and (max-width: 1239px) {
+  .faq-text p {
+    font-size: 14px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 769px) {
+  .faq-text p {
+    font-size: 16px;
+    line-height: 45px;
+  }
 }
 

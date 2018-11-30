@@ -13,7 +13,7 @@
     </div>
 
     <div class="text-box-container col12">
-        <div class="title-box">
+        <div class="title-box bg-red">
             <h2>WHAT IS CAMP SILAH?</h2>
         </div>
 
@@ -133,6 +133,5 @@
         </div>
 
         </div>
-    </div>
 
 @endsection
