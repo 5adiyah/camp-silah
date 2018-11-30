@@ -23,34 +23,34 @@
         <div class="grid-item col1"><p>12</p></div>
     </div>
 
-    <div class="nav">
-        <div class="site-logo"><img src="{{ asset('images/mobile-logo.png') }}" alt="Camp Silah Logo"></div>
-        <div class="site-name"><img src="{{ asset('images/mobile-site-name.png') }}" alt="Camp Silah"></div>
-        <div class="site-details">
-            <p>CAMP MAGRUDER</p>
-            <img src="{{ asset('images/nav-divider.png') }}" alt="Nav Divider">
-            <p>JUNE 28 - JULY 1</p>
-            <img src="{{ asset('images/nav-divider.png') }}" alt="Nav Divider">
-            <p>$150/CHILD</p>
+    <div class="container grid ">
+        <div class="nav col12">
+            <div class="site-logo"><img src="{{ asset('images/mobile-logo.png') }}" alt="Camp Silah Logo"></div>
+            <div class="site-name"><img src="{{ asset('images/mobile-site-name.png') }}" alt="Camp Silah"></div>
+            <div class="site-details">
+                <p>CAMP MAGRUDER</p>
+                <img src="{{ asset('images/nav-divider.png') }}" alt="Nav Divider">
+                <p>JUNE 28 - JULY 1</p>
+                <img src="{{ asset('images/nav-divider.png') }}" alt="Nav Divider">
+                <p>$150/CHILD</p>
+            </div>
+            <div class="menu grid">
+                <div class="menu-item bg-red"><p>CAMP</p></div>
+                <div class="menu-item bg-green"><p>GUEST SPEAKER</p></div>
+                <div class="menu-item bg-yellow"><p>COUNSELORS</p></div>
+            </div>
         </div>
-        <div class="menu grid">
-            <div class="menu-item bg-red"><p>CAMP</p></div>
-            <div class="menu-item bg-green"><p>GUEST SPEAKER</p></div>
-            <div class="menu-item bg-yellow"><p>COUNSELORS</p></div>
+
+        @yield('content')
+
+        <div class="email-list col12"  style="background-image:url('{{ asset('images/email-pttrn.png') }}')">
+            <h2>Sign up to be the first to know about Camp Silah 2019</h2>
+            <div class="email-cta">
+                <button>Sign Up</button>
             </div>
         </div>
     </div>
 
-    <div class="container grid ">
-        @yield('content')
-    </div>
-
-    <div class="email-list"  style="background-image:url('{{ asset('images/email-pttrn.png') }}')">
-        <h2>Sign up to be the first to know about Camp Silah 2019</h2>
-        <div class="email-cta">
-            <button>Sign Up</button>
-        </div>
-    </div>
 
     <div class="footer">
         <div class="footer-logo">
@@ -69,10 +69,11 @@
                 <li><a href="#">REGISTRATION</a></li>
             </ul>
         </div>
-
-        <div class="sign-up">
-            <input type="text" placeholder="Sign up for more info">
-            <button>SIGN UP</button>
+        <div class="container">
+            <div class="sign-up col12">
+                <input type="text" placeholder="Sign up for more info">
+                <button>SIGN UP</button>
+            </div>
         </div>
     </div>
 

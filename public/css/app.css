@@ -165,6 +165,7 @@ a {
 .background-grid {
   grid-template-rows: 100vh;
   width: 95%;
+  max-width: 900px;
   margin: 0 auto;
   position: absolute;
   left: 2.5%;
@@ -227,6 +228,7 @@ a {
 
 .container {
   width: 95%;
+  max-width: 800px;
   margin: 0 auto;
   z-index: 2;
 }
@@ -313,6 +315,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   border-top: 10px solid #28B39E;
+  margin-bottom: 30px;
 }
 
 .footer-logo,
@@ -505,16 +508,74 @@ a {
   cursor: pointer;
 }
 
-.info-pic img {
+.info-box {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3fr 0.5fr 2fr;
+  -webkit-box-shadow: -1px 2px 6px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: -1px 2px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 651px) and (max-width: 1239px) {
+  .info-box {
+    grid-template-rows: 0.5fr 3fr;
+  }
+}
+
+@media (min-width: 1240px) {
+  .info-box {
+    grid-template-rows: 0.5fr 3fr;
+  }
+}
+
+.info-pic {
   width: 100%;
-  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1 / span 4;
+  grid-row: 1 / 2;
+}
+
+@media (min-width: 651px) and (max-width: 1239px) {
+  .info-pic {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 5;
+  }
+}
+
+@media (min-width: 1240px) {
+  .info-pic {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 5;
+  }
 }
 
 .info-title {
-  padding: 1em;
-  padding-top: 1.5rem;
   text-align: center;
-  margin-top: -10px;
+  grid-column: 1 / span 4;
+  grid-row: 2 / 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 651px) and (max-width: 1239px) {
+  .info-title {
+    grid-row: 1 / span 1;
+  }
+}
+
+@media (min-width: 1240px) {
+  .info-title {
+    grid-row: 1 / span 1;
+  }
 }
 
 .info-title h2 {
@@ -536,6 +597,22 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  grid-column: 1 / span 4;
+  grid-row: 3 / 4;
+}
+
+@media (min-width: 651px) and (max-width: 1239px) {
+  .info-text {
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 5;
+  }
+}
+
+@media (min-width: 1240px) {
+  .info-text {
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 5;
+  }
 }
 
 .info-text .link {

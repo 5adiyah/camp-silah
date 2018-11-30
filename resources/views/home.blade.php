@@ -27,8 +27,7 @@
     </div>
 
     <div class="info-box col12">
-        <div class="info-pic">
-            <img src="{{ asset('images/promo-pic1.png') }}" alt="">
+        <div class="info-pic" style="background-image:url('{{ asset('images/promo-pic1.png') }}')">
         </div>
         <div class="info-title bg-green">
             <h2>WHAT’S IT LIKE AT CAMP SILAH?</h2>
@@ -60,8 +59,7 @@
     </div>
 
     <div class="info-box col12">
-        <div class="info-pic">
-            <img src="{{ asset('images/promo-pic2.png') }}" alt="">
+        <div class="info-pic" style="background-image:url('{{ asset('images/promo-pic2.png') }}')">
         </div>
         <div class="info-title bg-red">
             <h2>INFO FOR PARENTS</h2>

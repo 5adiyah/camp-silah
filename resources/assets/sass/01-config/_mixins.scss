@@ -1,28 +1,40 @@
-//Mixins
-    // Small devices
-      @mixin sm {
-        @media (min-width: #{$screen-sm-min}) {
-          @content;
-        }
-      }
+//
+////Media Queries
+//// Small tablets and large smartphones (landscape view)
+//$mobile: 576px;
+//// Small tablets (portrait view)
+//$phablet: 650px;
+//// Small tablets (portrait view)
+//$tablet: 768px;
+//// Tablets and small desktops
+//$desktop: 992px;
+//// Large tablets and desktops
+//$desktopXL: 1200px;
 
-    // Medium devices
-    @mixin md {
-      @media (min-width: #{$screen-md-min}) {
-        @content;
-      }
-    }
+// Media Queries
+@mixin mq($screen) {
+  // Small
+  @if $screen == mobile {
+    @media (max-width: 414px) { @content; }
+  }
 
-    // Large devices
-    @mixin lg {
-      @media (min-width: #{$screen-lg-min}) {
-        @content;
-      }
-    }
+  // Medium
+  @if $screen == phablet {
+    @media (min-width: 415px) and (max-width: 650px) { @content; }
+  }
 
-    // Extra large devices
-    @mixin xl {
-      @media (min-width: #{$screen-xl-min}) {
-        @content;
-      }
-    }
+  // Large
+  @if $screen == tablet {
+    @media (min-width: 651px) and (max-width: 1239px) { @content; }
+  }
+
+  // Desktops
+  @if $screen == desktop {
+    @media (min-width: 769px) { @content; }
+  }
+
+  // Extra Large
+  @if $screen == xl {
+    @media (min-width: 1240px) { @content; }
+  }
+}
