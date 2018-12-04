@@ -25,7 +25,7 @@
 
     <div class="container grid ">
         <div class="nav col12">
-            <div class="site-logo"><img src="{{ asset('images/mobile-logo.png') }}" alt="Camp Silah Logo"></div>
+            <a href="/"><div class="site-logo"><img src="{{ asset('images/mobile-logo.png') }}" alt="Camp Silah Logo"></div></a>
             <div class="site-name"><img src="{{ asset('images/mobile-site-name.png') }}" alt="Camp Silah"></div>
             <div class="site-details">
                 <p>CAMP MAGRUDER</p>
@@ -35,9 +35,9 @@
                 <p>$150/CHILD</p>
             </div>
             <div class="menu grid">
-                <div class="menu-item bg-red"><p>CAMP</p></div>
-                <div class="menu-item bg-green"><p>GUEST SPEAKER</p></div>
-                <div class="menu-item bg-yellow"><p>COUNSELORS</p></div>
+                <div class="menu-item bg-red"><a href="about"><p>CAMP</p></a></div>
+                <div class="menu-item bg-green"><a href="speaker"><p>GUEST SPEAKER</p></a></div>
+                <div class="menu-item bg-yellow"><a href="counselors"><p>COUNSELORS</p></a></div>
             </div>
         </div>
 

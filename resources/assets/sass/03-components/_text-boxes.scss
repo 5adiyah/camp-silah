@@ -27,6 +27,7 @@
   font-size: 12px;
   letter-spacing: 1.5px;
   line-height: 25px;
+  margin: 15px 0;
   @include mq(tablet){
     font-size: 16px;
     line-height: 35px;
@@ -35,6 +36,12 @@
     font-size: 18px;
     line-height: 45px;
   }
+}
+
+.text-box strong{
+  font-weight: 800;
+  font-family: $font-secondary;
+  text-decoration: underline;
 }
 
 .text-box-container .text-box-cta{
