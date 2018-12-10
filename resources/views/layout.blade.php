@@ -26,13 +26,13 @@
     <div class="container grid ">
         <div class="nav col12">
             <a href="/"><div class="site-logo"><img src="{{ asset('images/mobile-logo.png') }}" alt="Camp Silah Logo"></div></a>
-            <div class="site-name"><img src="{{ asset('images/mobile-site-name.png') }}" alt="Camp Silah"></div>
+            <div class="site-name"><a href="/"><img src="{{ asset('images/mobile-site-name.png') }}" alt="Camp Silah"></a></div>
             <div class="site-details">
                 <p>CAMP MAGRUDER</p>
                 <img src="{{ asset('images/nav-divider.png') }}" alt="Nav Divider">
                 <p>JUNE 28 - JULY 1</p>
                 <img src="{{ asset('images/nav-divider.png') }}" alt="Nav Divider">
-                <p>$150/CHILD</p>
+                <p>$200/CHILD</p>
             </div>
             <div class="menu grid">
                 <div class="menu-item bg-red"><a href="about"><p>CAMP</p></a></div>

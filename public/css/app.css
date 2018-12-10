@@ -946,3 +946,28 @@ a {
   }
 }
 
+.speaker-bckgnd {
+  padding: 30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#004E64), to(#51DACD));
+  background-image: linear-gradient(-180deg, #004E64 0%, #51DACD 100%);
+  margin-bottom: 20px;
+}
+
+.speaker-profile {
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.speaker-profile img {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+
+.speaker-profile p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  line-height: 25px;
+  padding: 15px 0;
+}
+

@@ -20,3 +20,6 @@ Route::get('/faqs', function () {
 Route::get('/about', function () {
     return view('about');
 });
+Route::get('/speaker', function () {
+    return view('speaker');
+});
