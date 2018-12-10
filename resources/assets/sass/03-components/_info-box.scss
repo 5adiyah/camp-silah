@@ -1,0 +1,89 @@
+.info-box{
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3fr 0.5fr 2fr;
+  box-shadow: -1px 2px 6px 0 rgba(0,0,0,0.50);
+
+  @include mq(tablet) {
+    grid-template-rows: 0.5fr 3fr;
+  }
+
+  @include mq(xl) {
+    grid-template-rows: 0.5fr 3fr;
+  }
+}
+
+.info-pic{
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size:  cover;
+  grid-column: 1 / span 4;
+  grid-row: 1 / 2;
+
+  @include mq(tablet) {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 5;
+  }
+  @include mq(xl) {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 5;
+  }
+}
+
+.info-title{
+  text-align: center;
+  grid-column: 1 / span 4;
+  grid-row: 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mq(tablet) {
+    grid-row: 1 / span 1;
+  }
+  @include mq(xl) {
+    grid-row: 1 / span 1;
+  }
+}
+
+.info-title h2{
+  color: $white;
+  font-family: $font-secondary;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+}
+
+.info-text {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-column: 1 / span 4;
+  grid-row: 3 / 4;
+
+  @include mq(tablet) {
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 5;
+  }
+  @include mq(xl) {
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 5;
+  }
+}
+
+.info-text .link{
+  font-family: $font-primary;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  line-height: 25px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.link span:hover{
+  color: $green;
+}

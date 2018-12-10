@@ -1,0 +1,74 @@
+.nav{
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 2;
+}
+
+.site-logo, .site-name, .site-details{
+  text-align: center;
+}
+
+.site-name{
+  margin-top: 20px;
+}
+
+.site-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+
+  img, p{
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  p{
+    font-family: $font-secondary;
+    font-size: 10px;
+    font-weight: bold;
+    color: $black;
+    letter-spacing: 1.5px;
+    @include mq(tablet){
+      font-size: 12px;
+      font-weight: normal;
+    }
+    @include mq(desktop){
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+}
+
+.menu{
+  grid-column-gap: 0;
+  margin-top: 20px;
+}
+
+.menu-item{
+  grid-column: span 4;
+  font-family: $font-secondary;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+  p{
+    color: $white;
+    letter-spacing: 0.75px;
+  }
+
+  @include mq(tablet){
+    font-size: 14px;
+  }
+  @include mq(desktop){
+    font-size: 16px;
+  }
+}
+
+.menu-item:hover{
+  background-color: $blue;
+}
+
+

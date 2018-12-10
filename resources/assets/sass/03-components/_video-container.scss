@@ -1,0 +1,39 @@
+.video-container{
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.video-container > video {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.button-play{
+  width: 74px;
+  height: 52px;
+  border-style: solid;
+  border-width: 37px 0 37px 52px;
+  border-color: transparent transparent transparent $green;
+  background-color: transparent;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+}
+
+.button-pause{
+  width: 74px;
+  height: 60px;
+  border-color: $green;
+  border-style: double;
+  border-width: 0 0 0 52px;
+}
+
+.button-play:hover, .button-pause:hover{
+  border-color: transparent transparent transparent $blue;
+  transition: 500ms all ease;
+  will-change: border-width;
+  cursor: pointer;
+}

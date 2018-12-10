@@ -1,0 +1,72 @@
+.footer{
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 10px solid $green;
+  margin-bottom: 30px;
+}
+
+.footer-logo, .footer-site-name{
+  text-align: center;
+}
+
+.footer-logo img, .footer-site-name img{
+  width: 60%;
+  padding-bottom: 15px;
+}
+
+.footer-menu{
+  text-align: center;
+  padding: 15px 0;
+}
+
+.footer-menu li{
+  padding-bottom: 15px;
+}
+
+.footer-menu a{
+  font-family: $font-secondary;
+  font-weight: bold;
+  color: $green;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+
+.footer-menu a:hover{
+  color: $blue;
+}
+
+.sign-up{
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 80px;
+}
+
+.sign-up input{
+  border: 1px solid $grey;
+  padding: 15px;
+  font-family: $font-primary;
+  letter-spacing: 1.5px;
+}
+
+.sign-up button{
+  background-color: $yellow;
+  border-color: $yellow;
+  color: $white;
+  font-family: $font-secondary;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  font-size: 12px;
+  border-style: none;
+}
+
+.sign-up button:hover{
+  background-color: $blue;
+  border-color: $blue;
+}
+
+
