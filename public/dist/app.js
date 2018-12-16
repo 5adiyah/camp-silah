@@ -81,7 +81,7 @@ module.exports = __webpack_require__(2);
 /* 2 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: \n@import '/03-components/counselors';\n^\n      File to import not found or unreadable: /03-components/counselors.\n      in /Users/sadiali/Code/camp/resources/assets/sass/app.scss (line 22, column 1)\n    at runLoaders (/Users/sadiali/Code/camp/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /Users/sadiali/Code/camp/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/sadiali/Code/camp/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/sadiali/Code/camp/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (/Users/sadiali/Code/camp/node_modules/sass-loader/lib/loader.js:55:13)\n    at Object.done [as callback] (/Users/sadiali/Code/camp/node_modules/neo-async/async.js:8077:18)\n    at options.error (/Users/sadiali/Code/camp/node_modules/node-sass/lib/index.js:294:32)");
 
 /***/ })
 /******/ ]);

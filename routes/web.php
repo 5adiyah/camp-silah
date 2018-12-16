@@ -23,3 +23,6 @@ Route::get('/about', function () {
 Route::get('/speaker', function () {
     return view('speaker');
 });
+Route::get('/counselors', function () {
+    return view('counselors');
+});
