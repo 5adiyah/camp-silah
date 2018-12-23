@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>CAMP SILAH</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+    </script>
 
 </head>
 <body>
@@ -23,23 +27,30 @@
         <div class="grid-item col1"><p>12</p></div>
     </div>
 
-    <div class="container grid ">
-        <div class="nav col12">
-            <a href="/"><div class="site-logo"><img src="{{ asset('images/mobile-logo.png') }}" alt="Camp Silah Logo"></div></a>
-            <div class="site-name"><a href="/"><img src="{{ asset('images/mobile-site-name.png') }}" alt="Camp Silah"></a></div>
-            <div class="site-details">
-                <p>CAMP MAGRUDER</p>
-                <img src="{{ asset('images/nav-divider.png') }}" alt="Nav Divider">
-                <p>JUNE 28 - JULY 1</p>
-                <img src="{{ asset('images/nav-divider.png') }}" alt="Nav Divider">
-                <p>$200/CHILD</p>
-            </div>
-            <div class="menu grid">
-                <div class="menu-item bg-red"><a href="about"><p>CAMP</p></a></div>
-                <div class="menu-item bg-green"><a href="speaker"><p>GUEST SPEAKER</p></a></div>
-                <div class="menu-item bg-yellow"><a href="counselors"><p>COUNSELORS</p></a></div>
-            </div>
+    <div class="nav col12">
+        <div class="menuToggle"></div>
+        <div class="cross">&#735;</div>
+        <div class="site-logo"><a href="/"><img src="{{ asset('images/mobile-logo.png') }}" alt="Camp Silah Logo"></a></div>
+        <div class="site-name"><a href="/"><img src="{{ asset('images/mobile-site-name.png') }}" alt="Camp Silah"></a></div>
+        <div class="site-details">
+            <p>CAMP MAGRUDER</p>
+            <img src="{{ asset('images/nav-divider.png') }}" alt="Nav Divider">
+            <p>JUNE 28 - JULY 1</p>
+            <img src="{{ asset('images/nav-divider.png') }}" alt="Nav Divider">
+            <p>$200/CHILD</p>
         </div>
+        <div class="menu-placeholder">&nbsp;</div>
+        <div class="menu hide menu-toggle-wrapper">
+            <div class="menu-item bg-red"><a href="about"><p>CAMP</p></a></div>
+            <div class="menu-item bg-green"><a href="speaker"><p>GUEST SPEAKER</p></a></div>
+            <div class="menu-item bg-yellow"><a href="counselors"><p>COUNSELORS</p></a></div>
+            <div class="menu-item bg-red"><a href="counselors"><p>FAQs</p></a></div>
+            <div class="menu-item bg-green"><a href="counselors"><p>GALLERY</p></a></div>
+
+        </div>
+    </div>
+
+    <div class="container grid ">
 
         @yield('content')
         @yield('cta')
@@ -73,6 +84,27 @@
         </div>
     </div>
 
+    <script type="text/javascript">
+
+        jQuery(document).ready(function(){
+            $( ".cross" ).hide();
+
+            $( ".menuToggle" ).click(function() {
+                $( ".menu" ).toggleClass( "hide");
+                $( ".menuToggle" ).hide();
+                $( ".menu-placeholder" ).hide();
+                $( ".cross" ).show();
+            });
+
+            $( ".cross" ).click(function() {
+                $( ".menu" ).toggleClass( "hide");
+                $( ".cross" ).hide();
+                $( ".menuToggle" ).show();
+                $( ".menu-placeholder" ).show();
+            });
+        });
+
+    </script>
 
 </body>
 </html>
