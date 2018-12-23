@@ -151,6 +151,22 @@ body {
   background-color: #004E64;
 }
 
+.red {
+  color: #F6856F;
+}
+
+.green {
+  color: #28B39E;
+}
+
+.yellow {
+  color: #FED766;
+}
+
+.blue {
+  color: #004E64;
+}
+
 a {
   text-decoration: none;
 }
@@ -796,7 +812,7 @@ a {
 .email-list {
   padding: 10px 0;
   margin-bottom: 30px;
-  width: 95%;
+  width: 100%;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -969,5 +985,94 @@ a {
   letter-spacing: 1.5px;
   line-height: 25px;
   padding: 15px 0;
+}
+
+.colorful-header {
+  padding: 15px 50px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1.5px;
+  line-height: 25px;
+  text-align: center;
+}
+
+@media (min-width: 651px) and (max-width: 1239px) {
+  .colorful-header {
+    font-size: 18px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 769px) {
+  .colorful-header {
+    font-size: 54px;
+    line-height: 80px;
+  }
+}
+
+.colorful-header p {
+  letter-spacing: 4px;
+}
+
+.title-bar {
+  padding: 1em;
+  padding-top: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title-bar h2 {
+  color: #ffffff;
+  font-family: "Cabin", sans-serif;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+}
+
+.counselor-container {
+  display: grid;
+  max-width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 651px) and (max-width: 1239px) {
+  .counselor-container {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 769px) {
+  .counselor-container {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.counselor-box {
+  display: grid;
+  grid-template-rows: auto 75px;
+}
+
+.counselor-pic {
+  z-index: 2;
+}
+
+.counselor-pic img {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+
+.counselor-name {
+  margin: 20px auto;
+}
+
+.counselor-name button {
+  color: #ffffff;
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 

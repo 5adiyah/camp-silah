@@ -19,9 +19,6 @@
             <p><strong>Sons of Adam</strong> is a group, like DOE, who focuses on the Muslim boys in the community. SOA works on curiosity and promoting positive learning environments. Although just starting out, SOA hopes to continue their development and growth in supporting the Muslim community. </p>
         </div>
 
-        <div class="text-box-cta">
-            <a href="faqs"><button>Learn More</button></a>
-        </div>
     </div>
 
     <div class="text-box-container col12">
