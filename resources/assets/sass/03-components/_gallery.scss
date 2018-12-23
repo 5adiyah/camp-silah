@@ -1,0 +1,31 @@
+.gallery-container{
+  display: grid;
+  max-width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 30px;
+
+  @include mq(tablet) {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mq(desktop) {
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gallery-box{
+  display: grid;
+}
+
+.gallery-pic{
+  z-index: 2;
+}
+
+.gallery-pic img{
+  width: 100%;
+  height: auto;
+}
+
