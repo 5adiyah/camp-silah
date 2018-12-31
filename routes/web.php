@@ -29,3 +29,6 @@ Route::get('/counselors', function () {
 Route::get('/gallery', function () {
     return view('gallery');
 });
+Route::get('/schedule', function () {
+    return view('schedule');
+});

@@ -1,8 +1,8 @@
 @section('cta')
     <div class="email-list col12"  style="background-image:url('{{ asset('images/email-pttrn.png') }}')">
-        <h2>Sign up to be the first to know about Camp Silah 2019</h2>
+        <h2>Register your child for Camp Silah 2019!</h2>
         <div class="email-cta">
-            <button>Sign Up</button>
+            <button>Register</button>
         </div>
     </div>
 @endsection

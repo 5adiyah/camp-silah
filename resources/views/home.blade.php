@@ -22,7 +22,7 @@
         </div>
 
         <div class="text-box-cta">
-            <button>Learn More</button>
+            <a href="about"><button>Learn More</button></a>
         </div>
     </div>
 

@@ -23,7 +23,7 @@
     <div class="email-list col12"  style="background-image:url('{{ asset('images/email-pttrn.png') }}')">
         <h2>Sign up to be one of our counselors!</h2>
         <div class="email-cta">
-            <button>Sign Up</button>
+            <a href="https://airtable.com/shrkhBK4nK679nSug"><button>Sign Up</button></a>
         </div>
     </div>
 

@@ -44,18 +44,21 @@
             <div class="menu-item bg-red"><a href="about"><p>CAMP</p></a></div>
             <div class="menu-item bg-green"><a href="speaker"><p>GUEST SPEAKER</p></a></div>
             <div class="menu-item bg-yellow"><a href="counselors"><p>COUNSELORS</p></a></div>
-            <div class="menu-item bg-red"><a href="counselors"><p>FAQs</p></a></div>
-            <div class="menu-item bg-green"><a href="counselors"><p>GALLERY</p></a></div>
+            <div class="menu-item bg-red"><a href="faqs"><p>FAQs</p></a></div>
+            <div class="menu-item bg-green"><a href="gallery"><p>GALLERY</p></a></div>
 
         </div>
     </div>
 
-    <div class="container grid ">
+    <div class="wrapper">
+        <div class="container grid ">
 
-        @yield('content')
-        @yield('cta')
+            @yield('content')
+            @yield('cta')
 
+        </div>
     </div>
+
 
 
 
@@ -70,9 +73,9 @@
 
         <div class="footer-menu">
             <ul>
-                <li><a href="#">SCHEDULE</a></li>
-                <li><a href="#">COUNSELORS</a></li>
-                <li><a href="#">PACKING LIST</a></li>
+                <li><a href="schedule">SCHEDULE</a></li>
+                <li><a href="counselors">COUNSELORS</a></li>
+                <li><a href="packing-list">PACKING LIST</a></li>
                 <li><a href="#">REGISTRATION</a></li>
             </ul>
         </div>
