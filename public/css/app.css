@@ -1198,3 +1198,26 @@ a {
   height: auto;
 }
 
+.schedule p {
+  font-size: 18px;
+  line-height: 45px;
+  letter-spacing: 1.5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+p.time {
+  color: #F6856F;
+  font-weight: bold;
+}
+
+.schedule {
+  margin-bottom: 50px;
+  padding: 0 5%;
+}
+
+.schedule-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  margin-bottom: 20px;
+}
+
